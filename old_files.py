@@ -1,7 +1,6 @@
 
 import os
 from datetime import datetime, timedelta
-from time import time as _time
 import shutil
 
 
@@ -33,7 +32,7 @@ def get_old_dirs(dir_path, new_path, older_than):
 
 if __name__ == '__main__':
     today = datetime.today()
-    ten_days1 = today - timedelta(days=10)
+    ten_days1 = today - timedelta(days=10)  # replace with your respective days
     ten_days = ten_days1.strftime('%Y-%m-%d %H:%M:%S')
     actual_path = 'C:\\actual'  # replace with actual path
     old_files_path = 'C:\\old'  # replace with path for old_files
